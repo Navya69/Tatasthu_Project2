@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <style>*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+button{
+    font-family: 'Poppins',  sans-serif;
+}
+body{
+    font-family: 'Poppins',  sans-serif;
+}
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+}
+.logo-container,.nav-links,.cart{
+    display: flex;
+   
+}
+.three{
+    padding-top: 16px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    font-weight: 400;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+nav{
+    flex: 2;
+}
+.nav-link{
+    color: #5f5f79;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.cart{
+    flex: 1;
+    width: 50px;
+    height: 50px;
+    justify-content: flex-end;
+}
+.presentation{
+    display:flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.cover img{
+   height: 100%;
+    animation:drop 1.5s ease;
+    filter: drop-shadow(0px 5px 3px black);
+}
+.introduction{
+   
+    flex: 1;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+  background: linear-gradient(to right, #494964,#6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+.cta{
+    direction: unset;
+    padding: 0px 0px 0px 0px;
+}
+.cta-select{
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cta-add{
+    background: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin: 30px 0px  0px 30px;
+}
+.cover{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    padding-left: 750px;
+    padding-top: 0px;
+    height: 30%;
+    border-top: 3cm;
+    
+}
+.big-circle{
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.7;
+    height: 60%;
+}
+.medium-circle{
+    position: absolute;
+    top: 70%;
+    right: 25%;
+    z-index: -1;
+    height: 40%;
+    opacity: 0.4;
+}
+.small-circle{
+    position: absolute;
+    bottom: 10%;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+.laptop-select{
+    width: 5%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 90%;
+}
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-80px);
+    }
+}
+@media screen and (max-width:1024px){
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 30px;
+    }
+    .intro-text p{
+        font-size: 18px;
+    }
+    .cta{
+        padding: 10px 0px 0px 0px;
+    }
+    .laptop-select{
+        bottom: 5%;
+        right: 50%;
+        width: 50%;
+        transform: translate(50%,5%);
+    }
+    .cover img{
+        height: 80%;
+    }
+    .small-circle,.medium-circle,.big-circle{
+        opacity: 0.2;
+    }
+}
+@media screen and(max-width:360px){
+    
+}
+      
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="three dots.png" class="logo" alt="logo">
+            <h4 class="three">Three Dots</h4>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link"></a>Specs </li>
+                <li><a href="#" class="nav-link"></a>Products </li>
+                <li><a href="#" class="nav-link"></a>Contact </li>
+                
+            </ul>
+        </nav>
+        <div class="cart">
+            <img src="Cart.png" alt="cart">
+        </div>
+    </header>
+    <br> <br> <br>
+    <main>   
+        <section class="presentation">
+            <table >
+                <tr>
+                    <td>
+            <div>
+            <div class="introduction">
+                
+            </td>
+            <td>
+                <br> <br>
+              <div class="intro-text">
+                  <h1>Laptop for the future</h1> <br> 
+              <p>
+                  The new 14 inch bezeless display offering a 4k <br> 
+                  display with touch screen.
+              </p>
+            
+                </div>
+               
+                <div class="cta">
+                    <button class="cta-select">
+                        14 inch
+                    </button>
+                    <button class="cta-add">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="cover" align="top">
+                    <img src="LaptopImage.png" alt="matebook">
+                </div>
+         
+            </div>
+        </div>
+    
+        </section>
+        
+        <img class="big-circle"  src="medium circle.png" alt="">
+        <img class="medium-circle"   src="big circle.png" alt="">
+        <img class="small-circle"  src="small circle.png" alt="">
+    </td>
+    </tr>
+    </table>
+    
+    </main>
+    
+</body>
+</html>
